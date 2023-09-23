@@ -59,3 +59,15 @@ const { tens, ones } = calcNimadurni(number);
 console.log(`Tens: ${tens}`);
 console.log(`Ones: ${ones}`);
 
+// Exercise 5
+
+function sumOfDigit(): number {
+  let sum = 0;
+  for (let i = 10; i <= 99; i++) {
+    sum += i;
+  }
+  return sum;
+}
+const sum = sumOfDigit();
+console.log(`Sum of two-digit numbers: ${sum}`);
+
