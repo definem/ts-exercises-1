@@ -39,3 +39,23 @@ const A = 100;
 const B = 20; 
 const fitCount = calcFitCount(A, B);
 console.log(`Number of times section B can fit into section A: ${fitCount}`);
+
+
+// Exercise 4
+
+function calcNimadurni(number: number): { tens: number; ones: number } {
+  if (number < 10 || number > 99) {
+    throw new Error("Invalid number. Please provide a two-digit number.");
+  }
+
+  const tens = Math.floor(number / 10);
+  const ones = number % 10;
+
+  return { tens, ones };
+}
+
+const number = 57; 
+const { tens, ones } = calcNimadurni(number);
+console.log(`Tens: ${tens}`);
+console.log(`Ones: ${ones}`);
+
