@@ -22,3 +22,20 @@ function calcTons(weight: number): number {
 const weight = 2500; 
 const fullTons = calcTons(weight);
 console.log(`Full tons: ${fullTons}`);
+
+
+// Exercise 3
+
+function calcFitCount(A: number, B: number): number {
+  if (A < B) {
+    throw new Error("A must be greater than B");
+  }
+
+  const fitCount = Math.floor(A / B);
+  return fitCount;
+}
+
+const A = 100; 
+const B = 20; 
+const fitCount = calcFitCount(A, B);
+console.log(`Number of times section B can fit into section A: ${fitCount}`);
