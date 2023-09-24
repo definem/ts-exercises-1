@@ -94,3 +94,30 @@ function findDigitNumbers(): number {
 const result = findDigitNumbers();
 console.log(`The product of two-digit numbers is: ${result}`);
 
+
+// Exercise 7
+
+function findFaces(start: number, end: number): number[] {
+  const faces: number[] = [];
+
+  for (let num = start; num <= end; num++) {
+    const hundreds = Math.floor(num / 100);
+    const tens = Math.floor((num % 100) / 10);
+    const ones = num % 10;
+
+    if (hundreds - tens === tens - ones) {
+      faces.push(num);
+    }
+  }
+
+  return faces;
+}
+
+const start = 100;
+const end = 999;
+const faceNumbers = findFaces(start, end);
+
+console.log(
+  `The faces within the range ${start} to ${end} are: ${faceNumbers.join(", ")}`
+);
+
