@@ -59,6 +59,7 @@ const { tens, ones } = calcNimadurni(number);
 console.log(`Tens: ${tens}`);
 console.log(`Ones: ${ones}`);
 
+
 // Exercise 5
 
 function sumOfDigit(): number {
@@ -70,4 +71,26 @@ function sumOfDigit(): number {
 }
 const sum = sumOfDigit();
 console.log(`Sum of two-digit numbers: ${sum}`);
+
+
+// Exercise 6
+
+function findProductOfTwoDigitNumbers(): number {
+  let product = 0;
+
+  for (let i = 10; i <= 99; i++) {
+    for (let j = 10; j <= 99; j++) {
+      const currentProduct = i * j;
+
+      if (currentProduct > product) {
+        product = currentProduct;
+      }
+    }
+  }
+
+  return product;
+}
+
+const result = findProductOfTwoDigitNumbers();
+console.log(`The product of two-digit numbers is: ${result}`);
 
