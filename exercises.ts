@@ -75,7 +75,7 @@ console.log(`Sum of two-digit numbers: ${sum}`);
 
 // Exercise 6
 
-function findProductOfTwoDigitNumbers(): number {
+function findDigitNumbers(): number {
   let product = 0;
 
   for (let i = 10; i <= 99; i++) {
@@ -91,6 +91,6 @@ function findProductOfTwoDigitNumbers(): number {
   return product;
 }
 
-const result = findProductOfTwoDigitNumbers();
+const result = findDigitNumbers();
 console.log(`The product of two-digit numbers is: ${result}`);
 
