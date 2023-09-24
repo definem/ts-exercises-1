@@ -7,7 +7,7 @@ function calcMeters(length: number): number {
   return meters;
 }
 
-const length = 250; 
+const num: number = 250; 
 const completeMeters = calcMeters(length);
 console.log(`Complete meters: ${completeMeters}`);
 
